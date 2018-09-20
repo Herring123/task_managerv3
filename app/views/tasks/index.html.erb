@@ -1,9 +1,12 @@
 <h1>TASKS</h1>
+<div class="body">
+
 <% @tasks.each do |task| %>
 <ul>
 
 <li>
-<%= link_to task.name ,task_path(task) %>
+
+<%= link_to task.name ,task_path(task)  %>
 |
 <%= link_to "Delete", task_path(task), method: :delete, data: {confirm: "Are you sure?"} %>
 </li>
@@ -15,3 +18,4 @@
 <% end %>
 <%#= link_to "Add Task" ,new_task_path, class: "btn btn-primary" %>
 <%= render 'form', task:@task %>
+</div>
