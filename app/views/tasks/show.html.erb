@@ -1,0 +1,8 @@
+<h3>Name</h3>
+<%= @task.name %>
+<br>
+<h4>Description</h4>
+<%= @task.description %>
+
+<%= link_to "Edit Task", edit_task_path, class: "btn btn-danger" %>
+<%= link_to "Back to Tasks", tasks_path, class: "btn btn-primary" %>
