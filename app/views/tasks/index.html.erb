@@ -1,5 +1,6 @@
 <h1>TASKS</h1>
 <div class="body">
+<div>
 
 <% @tasks.each do |task| %>
 <ul>
@@ -16,6 +17,10 @@
 
 
 <% end %>
-<%#= link_to "Add Task" ,new_task_path, class: "btn btn-primary" %>
+</div>
+<div class="form">
 <%= render 'form', task:@task %>
+
+</div>
+<%#= link_to "Add Task" ,new_task_path, class: "btn btn-primary" %>
 </div>
