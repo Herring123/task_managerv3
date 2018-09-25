@@ -11,3 +11,5 @@ Task.create(name: "Homework", description:"Math needs to be done by tomorrow")
 Task.create(name: "Clean", description:"Top to Bottom")
 Task.create(name: "Laundry", description:"All clothes need washing")
 Task.create(name: "Shopping", description:"Empty fridge. Need fresh produce")
+
+User.create(email: "ben@ben.com", password: "123123")

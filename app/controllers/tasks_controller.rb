@@ -1,10 +1,11 @@
 class TasksController < ApplicationController
 
   def index
-    @tasks = Task.all
-    @user = current_user
+    # @tasks = Task.all
     @task= Task.new
     # @tasks = Task.where(user: current_user)
+    @tasks = current_user.tasks
+
   end
 
   def show
@@ -12,14 +13,17 @@ class TasksController < ApplicationController
   end
 
   def new
-    @task = Task.new
+    # @task = Task.new
     # @user = current_user
   end
 
   def create
     @task = Task.new(task_params)
+    @task.user_id = current_user.id
     @task.save
     redirect_to tasks_path
+
+
   end
 
   def edit
