@@ -12,7 +12,7 @@ class TasksController < ApplicationController
   end
 
   def new
-    # @task = Task.new
+    @task = Task.new
     # @user = current_user
   end
 

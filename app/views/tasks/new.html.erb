@@ -1,0 +1,11 @@
+<!-- <script src="https://unpkg.com/sweetalert@2.1.0/dist/sweetalert.min.js"></script> -->
+<div>
+  <%= simple_form_for @task, id: "form-submit" do |f| %>
+   <%= f.input :name %>
+   <%= f.input :description %>
+   <%= f.button :submit, class: "btn btn-danger" ,id: "sweet-alert-demo" %>
+  <% end %>
+
+</div>
+<!-- <button id="sweet-alert-demo" class="btn btn-primary">Click me!</button> -->
+

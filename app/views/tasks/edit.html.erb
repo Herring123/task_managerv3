@@ -1,1 +1,23 @@
-<%= render "form", task:@task %>
+<h1>Edit Task</h1>
+<div class="images">
+  <div>
+<img src="https://melbournechapter.net/images/eraser-clipart-svg-1.png" class ="eraser" alt="">
+
+  </div>
+  <div>
+<img src="https://melbournechapter.net/images/holding-clipart-pencil-clipart-5.png" class = "eraser" alt="">
+
+  </div>
+
+</div>
+<div class="form-edit">
+  <%= simple_form_for @task do |f| %>
+   <%= f.input :name %>
+   <%= f.input :description %>
+   <%= f.button :submit, class: "btn btn-danger"  %>
+  <% end %>
+
+</div>
+
+
+

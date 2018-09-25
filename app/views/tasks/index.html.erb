@@ -12,7 +12,14 @@
     <% end %>
   </div>
   <div class="form">
-    <%= render 'form', task:@task %>
+    <div>
+  <%= simple_form_for @task, id: "form-submit" do |f| %>
+   <%= f.input :name %>
+   <%= f.input :description %>
+   <%= f.button :submit, class: "btn btn-danger" ,id: "sweet-alert-demo" %>
+  <% end %>
+
+</div>
   </div>
 <%#= link_to "Add Task" ,new_task_path, class: "btn btn-primary" %>
 </div>

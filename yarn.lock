@@ -79,6 +79,10 @@ ajv@^6.1.0:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
+alert@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/alert/-/alert-1.0.0.tgz#0d589fc17b4e6014f519e73311f5414c8738ee6a"
+
 align-text@^0.1.1, align-text@^0.1.3:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/align-text/-/align-text-0.1.4.tgz#0cd90a561093f35d0a99256c22b7069433fad117"
@@ -1851,6 +1855,10 @@ es6-map@^0.1.3:
     es6-set "~0.1.5"
     es6-symbol "~3.1.1"
     event-emitter "~0.3.5"
+
+es6-object-assign@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/es6-object-assign/-/es6-object-assign-1.1.0.tgz#c2c3582656247c39ea107cb1e6652b6f9f24523c"
 
 es6-set@~0.1.5:
   version "0.1.5"
@@ -4475,6 +4483,10 @@ promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
 
+promise-polyfill@^6.0.2:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-6.1.0.tgz#dfa96943ea9c121fca4de9b5868cb39d3472e057"
+
 proxy-addr@~2.0.3:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-2.0.4.tgz#ecfc733bf22ff8c6f407fa275327b9ab67e48b93"
@@ -5399,6 +5411,17 @@ svgo@^0.7.0:
     mkdirp "~0.5.1"
     sax "~1.2.1"
     whet.extend "~0.9.9"
+
+sweet@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/sweet/-/sweet-0.1.1.tgz#19e2abacc413a1457cc54b433d400d46d6c4869d"
+
+sweetalert@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/sweetalert/-/sweetalert-2.1.0.tgz#d605dec840058fa8ad4a1f7c2c8c194bc72c27fa"
+  dependencies:
+    es6-object-assign "^1.1.0"
+    promise-polyfill "^6.0.2"
 
 tapable@^0.2.7:
   version "0.2.8"
